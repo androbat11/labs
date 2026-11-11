@@ -7,8 +7,8 @@ instructions find what user's requesting against the document.
 # Lab 2: Create a wc terminal tool as wc in linux
 
 ## Tasks 
-[] - wc - show the list of characters in the file 
-[] - wc - show the bytes length of the file
-[] - wc - show the list of words in the file  
-[] - wc - show the list of lines in the file
+- [] - wc - show the list of characters in the file
+- [] - wc - show the bytes length of the file
+- [] - wc - show the list of words in the file  
+- [] - wc - show the list of lines in the file
 
