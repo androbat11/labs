@@ -6,10 +6,20 @@ Welcome to the foundational module of the Algorithms & Data Structures Lab.
 1. [01_memory_layout_and_indexing.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/01_memory_layout_and_indexing.md)
    - Physical RAM as byte-addressable space.
    - Address calculation formula $\text{Base} + (i \times S)$.
+   - The math logic: multiplication as repeated addition & dimensional unit cancellation.
+   - From address to value (dereferencing, assembly `mov eax, [rbx + rdi*4]`, locker analogy).
    - 0-indexing as an offset metric.
    - Maximum bounds and memory footprint.
    - CPU Cache Lines, Spatial Locality, and $O(1)$ indexing.
    - Rust (`[T; N]`, `Vec<T>`) vs. Bun/TypeScript (V8/JSC packed arrays vs. dictionary mode).
+
+2. [02_indexing_math_workbook.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/02_indexing_math_workbook.md)
+   - Interactive exercises & problem workbook covering:
+     - Part 1: Conceptual reasoning & dimensional unit checks.
+     - Part 2: Manual address calculation drills (decimal & hexadecimal).
+     - Part 3: Boundaries, memory footprints, and sentinels.
+     - Part 4: "Bug Detective" diagnostics (stride errors, addition bugs).
+     - Part 5: Hardware cache line calculations & hit/miss ratios.
 
 ---
 
