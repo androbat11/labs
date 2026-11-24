@@ -22,6 +22,12 @@ Welcome to the foundational module of the Algorithms & Data Structures Lab.
    - Rust (`[T; N]`, `Vec<T>`) vs. Bun/TypeScript (V8/JSC packed arrays vs. dictionary mode).
 
 3. [02_indexing_math_workbook.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/02_indexing_math_workbook.md)
+   - Interactive exercises & problem workbook covering conceptual questions, manual calculation drills, and cache metrics.
+
+4. [03_address_bytes_and_values.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/03_address_bytes_and_values.md)
+   - Deep dive into the difference between Address (location coordinate), Byte (8-bit hardware container), and Value (payload/data).
+   - The Mailbox and Street Number visual analogy.
+   - Curated YouTube video lessons (Crash Course, Ben Eater, Low Level Learning, Computerphile).
    - Interactive exercises & problem workbook covering:
      - Part 1: Conceptual reasoning & dimensional unit checks.
      - Part 2: Manual address calculation drills (decimal & hexadecimal).
