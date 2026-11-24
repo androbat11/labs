@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "topics/01_arrays_and_strings/rust",
+    "topics/02_linked_lists/rust",
+    "topics/03_stacks_and_queues/rust",
+    "topics/04_hash_tables/rust",
+    "topics/05_searching_and_sorting/rust",
+    "topics/06_trees_and_heaps/rust",
+    "topics/07_graphs/rust",
+    "topics/08_dynamic_programming/rust",
+]
+resolver = "2"

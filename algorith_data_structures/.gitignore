@@ -1,0 +1,13 @@
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Bun / Node
+node_modules/
+bun.lockb
+bun.lock
+
+# OS & Editor
+.DS_Store
+*.log
