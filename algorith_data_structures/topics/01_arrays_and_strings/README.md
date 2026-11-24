@@ -3,7 +3,15 @@
 Welcome to the foundational module of the Algorithms & Data Structures Lab.
 
 ## 📖 Theoretical Foundations & Study Notes
-1. [01_memory_layout_and_indexing.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/01_memory_layout_and_indexing.md)
+1. [00_recommended_readings_guide.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/00_recommended_readings_guide.md)
+   - Comprehensive reading syllabus: exact textbooks, chapter numbers, section breakdowns, and topics.
+   - CS:APP (address arithmetic, scaled indexing, 64-byte cache lines).
+   - OSTEP (virtual memory, base & bounds address translation, memory APIs).
+   - Ulrich Drepper (RAM bus controllers, L1/L2/L3 caches, hardware prefetchers).
+   - Rust systems memory (`Vec<T>` heap triplets, `&[T]` fat pointers, UTF-8 variable width).
+   - V8 engine internals (Packed SMI/Double arrays vs. Dictionary mode).
+
+2. [01_memory_layout_and_indexing.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/01_memory_layout_and_indexing.md)
    - Physical RAM as byte-addressable space.
    - Address calculation formula $\text{Base} + (i \times S)$.
    - The math logic: multiplication as repeated addition & dimensional unit cancellation.
@@ -13,7 +21,7 @@ Welcome to the foundational module of the Algorithms & Data Structures Lab.
    - CPU Cache Lines, Spatial Locality, and $O(1)$ indexing.
    - Rust (`[T; N]`, `Vec<T>`) vs. Bun/TypeScript (V8/JSC packed arrays vs. dictionary mode).
 
-2. [02_indexing_math_workbook.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/02_indexing_math_workbook.md)
+3. [02_indexing_math_workbook.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/02_indexing_math_workbook.md)
    - Interactive exercises & problem workbook covering:
      - Part 1: Conceptual reasoning & dimensional unit checks.
      - Part 2: Manual address calculation drills (decimal & hexadecimal).

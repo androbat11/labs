@@ -239,23 +239,14 @@ In JavaScript engines (like JavaScriptCore in Bun or V8 in Node):
 
 ## 8. Recommended Reading Materials
 
-To deepen your systems-level intuition regarding memory, caching, and array representations, here are the highest-quality references:
+For an in-depth syllabus with exact section numbers, pages, and key takeaways, see the dedicated guide:
+👉 **[00_recommended_readings_guide.md](file:///home/manuel/Documents/labs/algorith_data_structures/topics/01_arrays_and_strings/00_recommended_readings_guide.md)**
 
-### 1. The Gold Standard Systems Textbook
-* **"Computer Systems: A Programmer's Perspective" (CS:APP)** by Randal E. Bryant & David R. O'Hallaron
-  * **Section 3.8: Array Allocation and Access**: Explains exactly how machine and assembly instructions compute array offsets for 1D, multi-dimensional, and variable-sized arrays.
-  * **Chapter 6: The Memory Hierarchy**: Breaks down L1/L2/L3 CPU cache architectures, cache lines (64 bytes), and cache-friendly code.
-
-### 2. Free High-Quality Online Books & Papers
-* **"Operating Systems: Three Easy Pieces" (OSTEP)** by Remzi Arpaci-Dusseau and Andrea Arpaci-Dusseau
-  * Free online at: [ostep.org](https://pages.cs.wisc.edu/~remzi/OSTEP/)
-  * Focus on the **Virtual Memory** section (address translation, page tables, physical vs. virtual addresses).
-* **"What Every Programmer Should Know About Memory"** by Ulrich Drepper (Red Hat)
-  * The definitive deep dive on RAM hardware, memory controllers, bus latency, and cache line prefetching.
-* **"The Rust Programming Language" (The Book)**
-  * [Chapter 4.3: Slices](https://doc.rust-lang.org/book/ch04-03-slices.html) – How Rust represents contiguous array views as fat pointers `(ptr, len)`.
-  * [Chapter 8.1: Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html) – Heap allocation, reallocation growth factors, and memory capacity.
-* **V8 Engine Internals: "Elements kinds in V8"** by Mathias Bynens
-  * [v8.dev/blog/elements-kinds](https://v8.dev/blog/elements-kinds)
-  * An inside look at how modern JavaScript engines optimize contiguous arrays internally (Packed SMI vs. Double) and why introducing "holes" de-optimizes them into hash tables.
+### Key Highlights by Topic:
+* **Machine-Level Addressing**: *CS:APP (Bryant & O'Hallaron)* – **Section 3.4.1** (scaled indexed addressing `Imm(r_b, r_i, s)`) and **Section 3.8** (1D/2D array allocation and pointer arithmetic).
+* **Hardware Caches & Spatial Locality**: *CS:APP* – **Chapter 6** (64-byte cache lines, spatial/temporal locality, stride-1 array performance).
+* **Virtual Memory & Address Translation**: *OSTEP (Arpaci-Dusseau)* – **Chapters 13, 14, 15** (address spaces, base & bounds relocation, buffer bounds checking).
+* **Hardware Silicon Perspective**: *Ulrich Drepper* – *"What Every Programmer Should Know About Memory"* (Sections 2 & 6: L1/L2/L3 cache architectures, memory controllers, prefetching).
+* **Rust Memory Architecture**: *Programming Rust (Blandy et al.)* – **Chapter 3** (`[T; N]` stack arrays, 24-byte `Vec<T>` heap triplets, `&[T]` fat pointers) and **Chapter 17** (why UTF-8 strings cannot be indexed with $O(1)$).
+* **JS Engine Realities**: *V8 Team (Mathias Bynens)* – *"Elements Kinds in V8"* (packed SMI C++ arrays vs. dictionary mode fallback).
 
