@@ -1,1 +1,9 @@
 target/
+
+# C / Assembly binaries & intermediates
+*.o
+*.out
+*.exe
+*.i
+*_binary
+
