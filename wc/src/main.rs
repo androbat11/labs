@@ -1,3 +1,8 @@
+mod filesystem;
+mod wc;
+
+use filesystem::File;
 fn main() {
-    println!("Hello, world!");
+    let file = File { path: "./input.txt"};
+    let opened = 
 }

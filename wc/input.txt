@@ -1,0 +1,4 @@
+Roses are blue,
+terminals are red,
+you have a bug,
+in line 22

@@ -1,0 +1,8 @@
+{
+    "rust-analyzer.check.command": "clippy",
+    "rust-analyzer.linkedProjects": [
+        "wc/Cargo.toml",
+        "rustlings/Cargo.toml",
+        "algorith_data_structures/Cargo.toml"
+    ]
+}
