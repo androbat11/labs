@@ -1,13 +1,13 @@
 use std::fs;
 use std::env;
 
-
-pub struct File<'a> {
-    pub path: &'a str,
+#[derive(Debug)]
+pub struct File {
+    pub path: String,
 }
 
-// impl File<'a> {
-//     pub fn open(path: &str) -> File {
-//         File { path }
-//     }
-// }
+impl File {
+    pub fn open(path: String) -> File {
+        File { path }
+    }
+}
